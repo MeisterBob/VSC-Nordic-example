@@ -11,7 +11,7 @@
             "program": "_build/nrf52840_xxaa.out",
             "cwd": "${workspaceFolder}",
             "MIMode": "gdb",
-            "miDebuggerPath": "${env:GNU_GCC}/arm-none-eabi-gdb.exe",
+            "miDebuggerPath": "${env:GNU_GCC}/arm-none-eabi-gdb",
             "targetArchitecture": "arm",
             "customLaunchSetupCommands": [
                 { "text": "-environment-cd ${workspaceFolder}", "description": "set cwd", "ignoreFailures": false },
@@ -23,7 +23,7 @@
             ],
             "stopAtEntry": true,
             "miDebuggerServerAddress": "localhost:2331",
-            "debugServerPath": "${env:SEGGER_TOOLS}/JLinkGDBServerCL.exe",
+            "debugServerPath": "${env:SEGGER_TOOLS}/JLinkGDBServerCL",
             "debugServerArgs": "-select USB=${env:PCA10056_SN} -device nRF52840_xxAA -if SWD -speed 1000 -noir",
             "serverStarted": "Connected to target",
 //            "logging": {
